@@ -68,9 +68,11 @@
 
     <script class="code" type="text/javascript">$(document).ready(function () {
 
+
         $('.scenario-result-table').DataTable({
+
             "order": [[0, "asc",], [3, "asc",]],
-            "pageLength": 10,
+            "pageLength": 25,
             "language": {
                 searchPlaceholder: "Filter",
                 search: ""
@@ -80,31 +82,12 @@
         // Results table
         $('#test-results-table').DataTable({
             "order": [[0, "asc",], [3, "asc",]],
-            "pageLength": 10,
-            "lengthMenu": [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]]
+            "pageLength": 100,
+            "lengthMenu": [[25, 50, 100, 200, -1], [25, 50, 100, 200, "All"]]
         });
 
-        $('#evidence-table').DataTable({
-                    searching: false,
-                    paging: false,
-                    info: false
-        });
-
-        $(".feature-coverage-table").DataTable({
-            searching: false,
-            paging: false,
-            info: false
-        });
-
-        $(".feature-coverage-table-with-pagination").DataTable({
-            order: [[0, "asc",]],
-            pageLength: 10,
-            language: {
-                searchPlaceholder: "Filter",
-                search: ""
-            }
-        });
-    });
+    })
+    ;
     </script>
 </head>
 
@@ -124,9 +107,9 @@
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                > Feature  (with Feature Login)
+                > Feature 
                 > <span
-                    class="truncate-60">Login</span>
+                    class="truncate-60">Login (Tests With Errors)</span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -155,16 +138,24 @@
         <div class="middlb">
             <div class="table">
 
-                <h2><i class='fa fa-tags'></i> Feature: Login</h2>
+                <h2><i class='fa fa-tags'></i> Feature: Login (Tests With Errors)</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
                             <div class="test-count-summary">
-                                <div class="test-count-title">
-                                1 test scenarios 
-                                 |
-                                    <a href="dbe46f52e3b4924a3da9572a81532ae20ce3f60b23d04f81c856d3e1ffb067e8.csv" title="Download CSV"> <i class="fa fa-download"
-                                                                                    title="Download CSV"></i></a>
+                                <div>
+
+                                1 broken test
+                                    across 1 scenario
+
+                                     |
+                                        <a href="65dbd980fb3c029f5b176832e4371d40791bd526b4b03e13de3eb65472a91c59.csv" title="Download CSV"> <i class="fa fa-download"
+                                                                                        title="Download CSV"></i></a>
+
+                                    <p class="report-info"><i class="fas fa-info-circle"></i> Note that results include
+                                        data-driven scenarios containing broken test ,
+                                        which may also contain results other than broken test .</p>
+
 
 
                                 </div>
@@ -242,9 +233,7 @@
                                                         <table class="table">
                                                             <thead>
                                                             <tr>
-                                                                <th scope="col">Scenario Results (including rows of test
-                                                                    data)
-                                                                </th>
+                                                                <th scope="col">Scenarios</th>
                                                                 <th scope="col" colspan="2" class="automated-stats">
                                                                     Automated
                                                                 </th>
@@ -314,75 +303,6 @@
                                                             </tr>
                                                             </tbody>
                                                         </table>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <table class="table">
-                                                            <thead>
-                                                            <tr>
-                                                                <th>Execution Time</th>
-                                                                <th>Clock Time</th>
-                                                                <th>Fastest Test</th>
-                                                                <th>Slowest Test</th>
-                                                                <th>Average Execution Time</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr>
-                                                                <td>2ms</td>
-                                                                <td>0ms</td>
-                                                                <td>2ms</td>
-                                                                <td>2ms</td>
-                                                                <td>2ms</td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <h3>Functional Coverage Overview</h3>
-
-
-                                                                <h4>Features</h4>
-
-                                                                <table class="table feature-coverage-table" id="Feature">
-                                                                    <thead>
-                                                                    <tr>
-                                                                        <th>Feature</th>
-                                                                        <th style="width:7.5em;">Scenarios</th>
-                                                                        <th style="width:7.5em;">% Pass</th>
-                                                                        <th style="width:7.5em;">Result</th>
-                                                                        <th>Coverage</th>
-                                                                    </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                    <a href="eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html">Login</a>
-                                                                            </td>
-                                                                            <td>1</td>
-                                                                            <td>0%</td>
-                                                                            <td>
-                                                                                    <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="progress">
-                                                                                        <div class="progress-bar"
-                                                                                             role="progressbar"
-                                                                                             style="width: 100%; background-color: darkorange"
-                                                                                             aria-valuenow="1"
-                                                                                             title="100% error"
-                                                                                             aria-valuemin="0"
-                                                                                             aria-valuemax="100">
-                                                                                        </div>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
                                                     </div>
                                                 </div>
 
@@ -490,7 +410,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                         </td>
 
                     </tr>

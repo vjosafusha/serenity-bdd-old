@@ -170,7 +170,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-05-2019 16:59</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-04-2020 21:27</span>
     <br style="clear:left"/>
 </div>
 
@@ -184,11 +184,23 @@
                         <div>
                             <div clas="table">
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-8">
                                     <span>
                                             <h2><i class="fa fa-book"></i> Feature:  Login</h2>
                                         </span>
                                 </div>
+                                    <div class="col-sm-4">
+                                        <span class="feature-tags">
+                                                <p class="tag">
+                                                    <span class="badge tag-badge" style="background:default;">
+                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
+                                                                                          style="background:default;"
+                                                                                          href="032d6af513042bab630a93dd523e39b5d48b7cb21912534b1808d09b533b51e2.html">Debug
+                                                        (tag)</a>
+                                                    </span>
+                                                </p>
+                                        </span>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -231,7 +243,7 @@
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            <td style="width:1%;"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
                                                                
                                                             </td>
                                                         </tr>
@@ -243,7 +255,7 @@
 
 
                                                 <div class="scenario-docs card" id="5b8db84abbf974330c4a7cda0d80c04868f08e9d7743969008253cea2a8bbd38">
-                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 Login with valid credentials
@@ -251,7 +263,7 @@
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                                    <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
                                                             </span>
                                                         </div>
                                                         <div class="scenario-report-badges">
@@ -281,10 +293,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -321,12 +333,11 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count">
-                                                                        <a href="99a89d3555e0cab30d62703923bee2074fe6287441799f521489fc1a760aca30.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                     </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">100%</td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -350,8 +361,8 @@
                                                 <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
-                                                                            <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                             <td colspan="3"><a href="73a3df654e7d8fff406bd49dbabf16185b789d9582abaa69f8d78c52aa9371f5.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
 
                                             </tr>
@@ -364,12 +375,12 @@
                                                 <td class="automated-stats">0</td>
                                                 <td class="automated-stats"> </td>
                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
-                                                                </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="386ecc235aecc8807664e8223bef43a39a51a14bf99a0986c9a2948fcfa981c0.html"><i
+                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
+                                                                    </td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">100%</td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -402,11 +413,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>37s</td>
-                                                        <td>37ms</td>
-                                                        <td>37s</td>
-                                                        <td>37s</td>
-                                                        <td>37s</td>
+                                                        <td>2ms</td>
+                                                        <td>0ms</td>
+                                                        <td>2ms</td>
+                                                        <td>2ms</td>
+                                                        <td>2ms</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -429,16 +440,16 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result SUCCESS">
+                                                <tr class="scenario-result ERROR">
                                                     <td>
                                                             <a href="1db05acf20cac551df2f3bbb736bf28eb9cb9134d63537d95cfd508366c2f17d.html">Login with valid credentials</a>
                                                     </td>
                                                     <td>2</td>
-                                                    <td>16:59:23</td>
-                                                    <td>00:37</td>
+                                                    <td>21:27:02</td>
+                                                    <td>00:00</td>
                                                     <td>
-                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
-                                                                style="display:none">SUCCESS</span>
+                                                            <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> <span
+                                                                style="display:none">ERROR</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>

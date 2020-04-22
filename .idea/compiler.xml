@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="serenitybdd" />
+        <module name="serenity-bdd" />
       </profile>
     </annotationProcessing>
   </component>
